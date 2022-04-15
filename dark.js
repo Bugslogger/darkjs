@@ -3,14 +3,14 @@
  *
  */
 
-
 /**
- * 
- * @param {any} time 
- * @returns 
+ *
+ * @param {any} time
+ * @returns
  */
 
 function timeAgo(time) {
+  if (!time) return "Gimme your value time..?";
   if (new Date(time).getTime() > new Date().getTime())
     return "are you time traveller?";
   let date = new Date(time);
@@ -31,8 +31,3 @@ function timeAgo(time) {
     (day_diff < 31 && Math.ceil(day_diff / 7) + " weeks ago")
   );
 }
-
-// 2022-04-15T03:42:24.942Z
-// 1649994168551
-
-console.log(timeAgo("2022-04-15T03:42:24.942Z"));
