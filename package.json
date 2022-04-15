@@ -1,0 +1,28 @@
+{
+  "name": "darkjs",
+  "version": "1.0.0",
+  "description": "this js functions are created by MrDark to reduce the search time. because he got frustrated doing google everytime ",
+  "main": "dark.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bugslogger/darkjs.git"
+  },
+  "keywords": [
+    "darkjs"
+  ],
+  "author": "MrDark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bugslogger/darkjs/issues"
+  },
+  "homepage": "https://github.com/Bugslogger/darkjs#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
