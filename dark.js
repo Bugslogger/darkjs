@@ -10,9 +10,9 @@
  */
 
 function timeAgo(time) {
-  if (!time) return "Gimme your value time..?";
+  if (!time) return "pass timestamp or time string in function paramete.r";
   if (new Date(time).getTime() > new Date().getTime())
-    return "are you time traveller?";
+    return "time should be less then current.";
   let date = new Date(time);
   let diff = (new Date().getTime() - date.getTime()) / 1000,
     day_diff = Math.floor(diff / 86400);
@@ -31,3 +31,5 @@ function timeAgo(time) {
     (day_diff < 31 && Math.ceil(day_diff / 7) + " weeks ago")
   );
 }
+
+module.exports = timeAgo;
